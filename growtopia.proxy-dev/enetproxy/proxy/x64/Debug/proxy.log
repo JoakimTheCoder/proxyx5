@@ -1,0 +1,6 @@
+﻿  events.cpp
+C:\Users\ggjok\Desktop\growtopia.proxy-dev\enetproxy\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ggjok\Desktop\growtopia.proxy-dev\enetproxy\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ggjok\Desktop\growtopia.proxy-dev\enetproxy\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\ggjok\Desktop\growtopia.proxy-dev\enetproxy\proxy\events.cpp(459,60): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  proxy.vcxproj -> C:\Users\ggjok\Desktop\growtopia.proxy-dev\enetproxy\x64\Debug\proxy.exe
