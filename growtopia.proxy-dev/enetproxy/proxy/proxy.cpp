@@ -94,25 +94,6 @@ void startHTTPS()
 }
 #ifdef _WIN32
 #endif
-BOOL WINAPI exit_handler(DWORD dwCtrlType) {
-    try {
-        std::ofstream clearhost("C:\\Windows\\System32\\drivers\\etc\\hosts");
-
-        switch (dwCtrlType) {
-        case CTRL_BREAK_EVENT || CTRL_CLOSE_EVENT || CTRL_C_EVENT:
-            if (clearhost.is_open()) {
-                clearhost << "";
-                clearhost.close();
-            }
-            return TRUE;
-
-        default: return FALSE;
-        }
-
-        return TRUE;
-    }
-    catch (int e) {}
-}
 void pofproxy()
 {
     try
@@ -174,7 +155,6 @@ void serverdata() {
 int main() {
 #ifdef _WIN32
     SetConsoleTitleA("JMProxy V2");
-    SetConsoleCtrlHandler(exit_handler, true);//auto host
 #endif
     system("color a");
     printf("Successfully started JMProxy\n");
